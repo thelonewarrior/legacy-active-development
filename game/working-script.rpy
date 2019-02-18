@@ -714,6 +714,7 @@ label yuri_selection_ch2:
      show layer master
      play music t3g
      play sound "sfx/giggle.ogg"
+     play music t3
      "I walk over to Yuri, who seems to be struggling to focus on her book."
      mc "Hi, Yuri. Nice to see you again."
      show yuri zorder 3 at t11
@@ -721,6 +722,7 @@ label yuri_selection_ch2:
      mc "Oh, Yuri! I'm so sorry! Are you okay?"
      y 1q "Yeah, I'll uhm..."
      y "I'll be fine"
+     stop music
      "The awkward silence reigns over the room, until."
      "The fire alarm goes off."
      play audio.alarmfire
@@ -738,7 +740,7 @@ label yuri_selection_ch2:
      "She's the cutest little nugget ever"
      mc "Yuri. It's fine, we all shout. As long as people forgiving it's okay. Now calm down so we can get out of here"
      "I just told Yuri to calm down. That's exactly what she was trying to get me to do."
-     "I'm a hypocrite. I guess I already knew that, but now I know the effet it has on people"
+     "I'm a hypocrite. I guess I already knew that, but now I know the effect it has on people"
      "The fire alarm is so god damn fucking loud. My ears are already bleeding."
      "We make it outside, to find Sayori and Monika, in deep conversation."
      hide yuri
@@ -750,7 +752,7 @@ label yuri_selection_ch2:
      m 1f "No. We were actually just pointing out that"
      mc "Oh my god."
      "There's smoke coming out of the side of the school."
-     stop music
+     stop audio.alarmfire
      "Where's Natsuki?"
      $ preferences.text_cps = 15
      "Oh no."
