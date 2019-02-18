@@ -1,0 +1,28 @@
+Changelog 2819:
+
+New burning school bg
+careful.txt
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+EASTER EGGS (SPOILERS):
+The End. For Now: When brightened reveals an image of the clubroom
+yuri.chr: Contains a new line of text
+careful.txt: Shhh. Spoilers
+
