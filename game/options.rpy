@@ -145,7 +145,7 @@ define config.save_directory = "DDLC_Legacy"
 
 ## The icon displayed on the taskbar or dock.
 
-define config.window_icon = "images/rsz_image.png"
+define config.window_icon = "mod_assets/rsz_image.png"
 
 ## Custom configs ##############################################################
 
