@@ -607,7 +607,7 @@ label poem_onedo:
      return
 #END OF CHAPTER 1
 
-define audio.alarmfire = "<loop 62:00>mod_assets/firealarmsfx.mp3"
+define audio.alarmfire = "<loop 62.000>mod_assets/firealarmsfx.mp3"
 
 label chap2_main:
     scene black with wipeleft
@@ -733,6 +733,7 @@ label yuri_selection_ch2:
      y "I'll be fine"
      stop music
      "The awkward silence reigns over the room, until."
+     play music audio.alarmfire
      "The fire alarm goes off."
      play music audio.alarmfire
      mc "YURI! QUICKLY! COVER YOURSELF WITH YOUR COAT AND LEAVE YOUR STUFF!"
@@ -740,16 +741,6 @@ label yuri_selection_ch2:
      scene corridor with wipeleft
      show yuri zorder 3 at t11
      y 1f "I'm coming!"
-     mc "YOU NEED TO HURRY UP!"
-     y 1y7 "[player]! IF YOU WANT TO GET OUT YOU WILL STAY CALM"
-     "She snapped at me. Has she ever snapped at anyone before?"
-     y 4d "OhmygodI'msosorrypleaseforgiveme{nw}"
-     y "I'm so sorry"
-     "Oh my god is she seriously crying because she snapped at me?"
-     "She's the cutest little nugget ever"
-     mc "Yuri. It's fine, we all shout. As long as people forgiving it's okay. Now calm down so we can get out of here"
-     "I just told Yuri to calm down. That's exactly what she was trying to get me to do."
-     "I'm a hypocrite."
      "The fire alarm is so god damn fucking loud. My ears are already bleeding."
      "We make it outside, to find Sayori and Monika, in deep conversation."
      image bg schoolfire = "mod_assets/school_fire.png"
