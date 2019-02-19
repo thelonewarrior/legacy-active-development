@@ -601,9 +601,8 @@ label chpter1:
 
 label poem_onedo:
      stop music
-     call screen dialog("This bit of the game was never fun, is it okay if I skipped it for you?", ok_action=Return())
-     call screen dialog("I forgot to introduce myself! I don't have a name but, I know yours,", ok_action=Return())
-     call screen dialog("[player].", ok_action=Return())
+     call screen dialog("What follows next is different", ok_action=Return())
+     call screen dialog("This game was too easy to change.", ok_action=Return())
 
      return
 #END OF CHAPTER 1
