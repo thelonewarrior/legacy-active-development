@@ -661,8 +661,8 @@ label chap2_main:
     mc "Yeah, sure Monika"
     s 1a "Oh! Okay, see ya in a bit [player]!"
     mc "See ya, Sayo"
-    show monika hide 1a at t22 zorder 3
-    show sayori hide 1a at t22 zorder 3
+    show monika 1a at thide zorder 3
+    show sayori 1a at thide zorder 3
     hide monika
     hide sayori
     "And that leaves me with two options on who I want to talk to"
@@ -727,7 +727,7 @@ label yuri_selection_ch2:
      stop music
      "The awkward silence reigns over the room, until."
      "The fire alarm goes off."
-     play audio.alarmfire
+     play music audio.alarmfire
      mc "YURI! QUICKLY! COVER YOURSELF WITH YOUR COAT AND LEAVE YOUR STUFF!"
      mc "FOR ALL WE KNOW THIS IS A REAL FIRE!"
      scene corridor with wipeleft
@@ -753,7 +753,7 @@ label yuri_selection_ch2:
      m 1f "No. We were actually just pointing out that"
      mc "Oh my god."
      "There's smoke coming out of the side of the school."
-     stop audio.alarmfire
+     stop music
      "Where's Natsuki?"
      $ preferences.text_cps = 15
      "Oh no."
