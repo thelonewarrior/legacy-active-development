@@ -661,6 +661,8 @@ label chap2_main:
     mc "Yeah, sure Monika"
     s 1a "Oh! Okay, see ya in a bit [player]!"
     mc "See ya, Sayo"
+    show monika hide 1a at t22 zorder 3
+    show sayori hide 1a at t22 zorder 3
     hide monika
     hide sayori
     "And that leaves me with two options on who I want to talk to"
@@ -740,10 +742,9 @@ label yuri_selection_ch2:
      "She's the cutest little nugget ever"
      mc "Yuri. It's fine, we all shout. As long as people forgiving it's okay. Now calm down so we can get out of here"
      "I just told Yuri to calm down. That's exactly what she was trying to get me to do."
-     "I'm a hypocrite. I guess I already knew that, but now I know the effect it has on people"
+     "I'm a hypocrite."
      "The fire alarm is so god damn fucking loud. My ears are already bleeding."
      "We make it outside, to find Sayori and Monika, in deep conversation."
-     hide yuri
      image bg schoolfire = "mod_assets/school_fire.png"
      scene bg schoolfire with wipeleft
      mc "Did you two have anything to do with this?"
