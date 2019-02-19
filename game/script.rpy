@@ -28,6 +28,8 @@ label start:
     #Here is an example of how you might do that
     # if persistent.playthrough == 1:
     # call example script
+    $ preferences.text_cps = 50
+
     call chap1_main
 
 

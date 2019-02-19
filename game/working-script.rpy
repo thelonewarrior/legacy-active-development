@@ -1,6 +1,14 @@
 
 
 label chap1_main:
+    scene black
+    menu:
+        "Do you want to skip the first chapter? The first chapter is the original DDLC's. Only skip if you remember the original beginning to DDLC. "
+        "Skip":
+            return
+        "Continue (Long way round)":
+            jump chpter1
+label chpter1:            
     stop music fadeout 2.0
     scene bg residential_day
     with dissolve_scene_full
