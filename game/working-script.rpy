@@ -601,8 +601,9 @@ label chpter1:
 
 label poem_onedo:
      stop music
-     call screen dialog("What follows next is different", ok_action=Return())
      call screen dialog("This game was too easy to change.", ok_action=Return())
+     call screen dialog("What follows next is different", ok_action=Return())
+
 
      return
 #END OF CHAPTER 1
@@ -612,7 +613,8 @@ define audio.alarmfire = "<loop 62.000>mod_assets/firealarmsfx.mp3"
 label chap2_main:
     scene black with wipeleft
     define q = Character("???")
-    q "Hola, you were probably expecting a normal beginning to this chapter."
+    define teacher = Character("Teacher")
+    q "You were probably expecting a normal beginning to this chapter."
     q "I know, you're probably wondering who I am"
     q "You've met me of course!"
     $ style.say_dialogue = style.edited
@@ -733,14 +735,14 @@ label yuri_selection_ch2:
      y "I'll be fine"
      stop music
      "The awkward silence reigns over the room, until."
-     play music audio.alarmfire
      "The fire alarm goes off."
      play music audio.alarmfire
-     mc "YURI! QUICKLY! COVER YOURSELF WITH YOUR COAT AND LEAVE YOUR STUFF!"
-     mc "FOR ALL WE KNOW THIS IS A REAL FIRE!"
+     mc "Shit. Shit. Shit. Shit!!!
+     mc "This must not be good!"
+     mc "Goddamit, HURRY UP YURI!"
      scene corridor with wipeleft
      show yuri zorder 3 at t11
-     y 1f "I'm coming!"
+     y 1f "I-I'm coming, s-sorry..."
      "The fire alarm is so god damn fucking loud. My ears are already bleeding."
      "We make it outside, to find Sayori and Monika, in deep conversation."
      image bg schoolfire = "mod_assets/school_fire.png"
@@ -755,16 +757,72 @@ label yuri_selection_ch2:
      "Where's Natsuki?"
      $ preferences.text_cps = 15
      "Oh no."
-     $ config.main_menu_music = audio.t3g2
-     stop music
+     $ preferences.text_cps = 30
+     
+     mc "Did any of you see Natsuki?"
+     m "No, she wasn't even at the club..."
+     mc "What if-"
+     n "Guys, what the hell is happening!"
+     mc "Nat! We were worried about you. Where did you disappear to?"
+     m "I swear I saw you come in to school this morning"
+     n "Why do you care so much?"
+     s "Hey Nat, we're only trying to be nice."
+     n "Well I only want you to stay out of my personal life. It doesn't concern any of you"
+     y "Natsuki, please calm down"
+     n "Ugh."
+     teacher "Everybody get into lines as classes so your teacher can count you"
+     mc "See ya in a bit then, guys"
+     n "Hmph"
+     y "Bye, [player]"
+     m "Cya!"
+     s "Byeeeee!!!!"
+     image livingroom = "mod_assets/living_room.jpg"
+     scene residential_day with wipeleft
+     "My phone vibrated, signalling a message."
+     "I quickly pick it up to see if it's news on what will happen with our school"
+     "It turns out to be a message to the Literature Club group chat"
+     "Monika is be asking if we could have a sleepover at mine"
+     "I say yes, duh"
+     $ style.say_dialogue = style.edited
+     "Just so I can spend more time with Yuri"
+     $ style.say_dialogue = style.normal
+     "My mind floats to the past two days..."
+     "First of joining the literature club"
+     scene bg house with wipeleft
+     "Then of my school basically burning down"
+     "And now a sleepover"
+     m "{i}Has he even noticed us yet?{/i}
+     s "{i}It looks like he's on autopilot{/i}
+     mc "Oh my god! Girls! How did you get here so quick?"
+     y "Monika told us to wait for you here."
+     m "Uhm, no I didn't"
+     "She is soooo lying"
+     mc "I don't really care."
+     mc "Come on inside"
+     n "Thanks"
+     "Hallelujah, she's come out of tsundere mode"
+     "I unlock the door, and the girls flood inside"
+     scene livingroom with wipeleft
+     y "Oh wow, a very sophisticated place you are keeping"
+     s "Which bed can I jump on?!?!?!
+     mc "Jeez, everyone calm down!"
+     mc "Here's how things will work"
+     mc "Monika and Sayori, you share the spare room's double bed."
+     mc "Natsuki, you take the second spare room, which has a single bed"
+     y "That leaves me with yo-"
+     mc "Yup, me. Sorry 'bout that."
+     y "No, it's fine, sorry if I implied that I was ungrateful"
+     mc "I was having a joke but thanks for the apology anyway."
+     y "Phew!"
+     m "You're funny, Yuri"
+     s "MONIKA!!! OMG WE'RE SHARING A BED! REEEEEEEEEEE!"
+     mc "Jesus Sayori... calm your halm.
+     "The night turned into binging the 'Sex Education' series on Netflix, which Sayori barely opened her eyes on."
+     "ALl was fun and games, yet little did we know how eventful the next morning would be"
      image bg endfornow = "gui/endfornow.png"
-     scene bg endfornow with dissolve_scene_full
-     pause (7)
-
-
-
-
      return
+     
+     
 
 
 
