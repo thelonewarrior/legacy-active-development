@@ -266,7 +266,7 @@ label chpter1:
     "The icing is sweet and full of flavor - I wonder if she made it herself."
     mc "This is really good."
     mc "Thank you, Natsuki."
-    n 5h "W-Why are you thanking me? It's not like I...!"
+    n 5h "Why are you thanking me? It's not like I...!"
     "{i}(Haven't I heard this somewhere before...?){/i}"
     show natsuki at s32
     n 5s "...Made them for you or anything."
@@ -760,22 +760,36 @@ label yuri_selection_ch2:
      $ preferences.text_cps = 30
      
      mc "Did any of you see Natsuki?"
-     m "No, she wasn't even at the club..."
+     m 2d "No, she wasn't even at the club..."
      mc "What if-"
-     n "Guys, what the hell is happening!"
+     hide monika
+     hide sayori
+     show monika 1f zorder 3 at t41
+     show sayori 1g at t42 zorder 3
+     show natsuki at t43 zorder 3
+     show yuri 1g/  at t44 zorder 3
+     n 1c "Guys, what the hell is happening!"
      mc "Nat! We were worried about you. Where did you disappear to?"
-     m "I swear I saw you come in to school this morning"
-     n "Why do you care so much?"
-     s "Hey Nat, we're only trying to be nice."
-     n "Well I only want you to stay out of my personal life. It doesn't concern any of you"
+     hide monika
+     show monika zorder 3 at t41
+     m 2k "I swear I saw you come in to school this morning"
+     n 5w "Why do you care so much?"
+     hide sayori
+     show sayori at t42 zorder 3
+     s 1c "Hey Nat, we're only trying to be nice."
+     n 5x "Well I only want you to stay out of my personal life. It doesn't concern any of you"
      y "Natsuki, please calm down"
-     n "Ugh."
+     n 5g "Ugh."
      teacher "Everybody get into lines as classes so your teacher can count you"
      mc "See ya in a bit then, guys"
      n "Hmph"
-     y "Bye, [player]"
-     m "Cya!"
-     s "Byeeeee!!!!"
+     y 1d "Bye, [player]"
+     m 1k "Cya!"
+     s 1d "Byeeeee!!!!"
+     hide monika
+     hide yuri
+     hide sayori
+     hide natsuki
      image livingroom = "mod_assets/living_room.jpg"
      scene residential_day with wipeleft
      "My phone vibrated, signalling a message."
@@ -791,35 +805,63 @@ label yuri_selection_ch2:
      scene bg house with wipeleft
      "Then of my school basically burning down"
      "And now a sleepover"
-     m "{i}Has he even noticed us yet?{/i}
-     s "{i}It looks like he's on autopilot{/i}
+     show monika at t11 zorder 3
+     m 1a "{i}Has he even noticed us yet?{/i}
+     hide monika
+     show monika 1a at t21 zorder 3
+     show sayori at t22 zorder 3 
+     s 1b "{i}It looks like he's on autopilot{/i}
      mc "Oh my god! Girls! How did you get here so quick?"
-     y "Monika told us to wait for you here."
-     m "Uhm, no I didn't"
+     hide sayori
+     hide monika
+     show yuri at t33 zorder 3
+     show monika 1a at t32 zorder 3
+     show sayori 1b at t31 zorder 3
+     y 1b "Monika told us to wait for you here."
+     hide monika
+     show monika at t32 zorder 3
+     m 1n "Uhm, no I didn't"
      "She is soooo lying"
      mc "I don't really care."
      mc "Come on inside"
-     n "Thanks"
+     hide monika
+     hide yuri
+     hide sayori
+     show natsuki at t41 zorder 3
+     show yuri 1b at t42 zorder 3
+     show monika 1a at t43 zorder 3
+     show sayori 1b at t44 zorder 3
+     n 1l "Thanks"
      "Hallelujah, she's come out of tsundere mode"
-     "I unlock the door, and the girls flood inside"
+     "I open the door, and the girls flood inside"
      scene livingroom with wipeleft
-     y "Oh wow, a very sophisticated place you are keeping"
-     s "Which bed can I jump on?!?!?!
+     show yuri at t21 zorder 3
+     y 1b "Oh wow, a very sophisticated place you are keeping"
+     show sayori at t22 zorder 3
+     s 4q "Which bed can I jump on?!?!?!
      mc "Jeez, everyone calm down!"
      mc "Here's how things will work"
      mc "Monika and Sayori, you share the spare room's double bed."
      mc "Natsuki, you take the second spare room, which has a single bed"
-     y "That leaves me with yo-"
+     y 2l "That leaves me with yo-"
      mc "Yup, me. Sorry 'bout that."
-     y "No, it's fine, sorry if I implied that I was ungrateful"
+     y 2p "No, it's fine, sorry if I implied that I was ungrateful"
      mc "I was having a joke but thanks for the apology anyway."
-     y "Phew!"
-     m "You're funny, Yuri"
-     s "MONIKA!!! OMG WE'RE SHARING A BED! REEEEEEEEEEE!"
-     mc "Jesus Sayori... calm your halm.
-     "The night turned into binging the 'Sex Education' series on Netflix, which Sayori barely opened her eyes on."
+     y 2l "Phew!"
+     hide yuri
+     hide sayori
+     show monika at t31 zorder 3
+     m 2j "You're funny, Yuri"
+     show yuri 4b at t32 zorder 3
+     show sayori at t33 zorder 3
+     s 4m "MONIKA!!! OMG WE'RE SHARING A BED! REEEEEEEEEEE!"
+     mc "Jesus Sayori... calm your ham.
+     scene livingroom with wipeleft
+     "The night turned into binging the 'Sex Education' series on Netflix, during which Sayori barely opened her eyes."
      "ALl was fun and games, yet little did we know how eventful the next morning would be"
      image bg endfornow = "gui/endfornow.png"
+     scene bg endfornow
+     pause 5
      return
      
      
