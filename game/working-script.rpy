@@ -725,6 +725,7 @@ label yuri_selection_ch2:
      show layer master
      play music t3g
      play sound "sfx/giggle.ogg"
+     stop music
      play music t3
      "I walk over to Yuri, who seems to be struggling to focus on her book."
      mc "Hi, Yuri. Nice to see you again."
@@ -752,13 +753,9 @@ label yuri_selection_ch2:
      show sayori 1f at t21 zorder 3
      m 1f "No. We were actually just pointing out that"
      mc "Oh my god."
-     "There's smoke coming out of the side of the school."
+     "The school is completely engulfed in black smoke."
      stop music
      "Where's Natsuki?"
-     $ preferences.text_cps = 15
-     "Oh no."
-     $ preferences.text_cps = 30
-     
      mc "Did any of you see Natsuki?"
      m 2d "No, she wasn't even at the club..."
      mc "What if-"
@@ -768,6 +765,7 @@ label yuri_selection_ch2:
      show sayori 1g at t42 zorder 3
      show natsuki at t43 zorder 3
      show yuri 1g/  at t44 zorder 3
+    play music t2
      n 1c "Guys, what the hell is happening!"
      mc "Nat! We were worried about you. Where did you disappear to?"
      hide monika
@@ -790,6 +788,8 @@ label yuri_selection_ch2:
      hide yuri
      hide sayori
      hide natsuki
+     stop music
+     play music t8
      image livingroom = "mod_assets/living_room.jpg"
      scene residential_day with wipeleft
      "My phone vibrated, signalling a message."
@@ -797,14 +797,19 @@ label yuri_selection_ch2:
      "It turns out to be a message to the Literature Club group chat"
      "Monika is be asking if we could have a sleepover at mine"
      "I say yes, duh"
+     stop music
+     play music g1
      $ style.say_dialogue = style.edited
      "Just so I can spend more time with Yuri"
      $ style.say_dialogue = style.normal
+     stop music
+     play music t8
      "My mind floats to the past two days..."
      "First of joining the literature club"
      scene bg house with wipeleft
      "Then of my school basically burning down"
      "And now a sleepover"
+     stop music
      show monika at t11 zorder 3
      m 1a "{i}Has he even noticed us yet?{/i}
      hide monika
@@ -812,6 +817,7 @@ label yuri_selection_ch2:
      show sayori at t22 zorder 3 
      s 1b "{i}It looks like he's on autopilot{/i}
      mc "Oh my god! Girls! How did you get here so quick?"
+     play music t6
      hide sayori
      hide monika
      show yuri at t33 zorder 3
@@ -859,6 +865,7 @@ label yuri_selection_ch2:
      scene livingroom with wipeleft
      "The night turned into binging the 'Sex Education' series on Netflix, during which Sayori barely opened her eyes."
      "ALl was fun and games, yet little did we know how eventful the next morning would be"
+     stop music
      image bg endfornow = "gui/endfornow.png"
      scene bg endfornow
      pause 5
