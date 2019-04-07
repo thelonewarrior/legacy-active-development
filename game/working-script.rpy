@@ -624,7 +624,7 @@ label chap2_main:
     "I-I mean I can't read them or anything! It's just I uhm, I uh...{nw}"
     q "I prefer to talk like this. I'm not going to tell you who I am until the time is right. I'll try not to break things on you"
     scene class with wipeleft
-    show sayori zorder 3 at t11
+    show sayori 1b at t11 zorder 3
     play music t2
     s 1b "[player]? Are you even alive!"
     "I glance up and am extremely startled by Sayori, who looks like she's been here a while"
@@ -646,15 +646,13 @@ label chap2_main:
     stop music
     play music t3
     show monika 3b zorder 3 at t11
-    m "[player]! Glad to see you didn't run away from us!"
-    hide monika
-    show monika 2d zorder 3 at t11
-    m "You are a bit late though..."
+    m 3b  "[player]! Glad to see you didn't run away from us"
+    m 2d  "You are a bit late though..."
     "Crap! Should I tell her I was spacing out or should I say I was at the toilet?!"
     "Unfortunately, someone has told her what happened already"
     hide monika
     show monika 2d at t22 zorder 3
-    show sayori zorder 3 at t21
+    show sayori 4q at t21 zorder 2
     s 4q "Oh, I found him spacing out in his last class!"
     mc "Then she did a terrible Terminator impression!"
     s 5d "Stop trying to justify yourself, meanie!"
@@ -662,8 +660,6 @@ label chap2_main:
     s 4p "Eh? That's rude [player]!"
     mc "Shut up, Sayori"
     s 5c "Hmph"
-    hide monika
-    show monika zorder 3 at t22
     m 3k "I should've interrupted but that was too funny"
     "She shoots a smile at me. Nobody other than my mother does that anymore. I feel special"
     m 1a "Anyway, I have to talk to Sayori for a bit. Is that okay?"
@@ -763,17 +759,13 @@ label yuri_selection_ch2:
      hide sayori
      show monika 1f zorder 3 at t41
      show sayori 1g at t42 zorder 3
-     show natsuki at t43 zorder 3
-     show yuri 1g/  at t44 zorder 3
+     show natsuki 1c at t43 zorder 3
+     show yuri 1g at t44 zorder 3
      play music t2
      n 1c "Guys, what the hell is happening!"
      mc "Nat! We were worried about you. Where did you disappear to?"
-     hide monika
-     show monika zorder 3 at t41
      m 2k "I swear I saw you come in to school this morning"
      n 5w "Why do you care so much?"
-     hide sayori
-     show sayori at t42 zorder 3
      s 1c "Hey Nat, we're only trying to be nice."
      n 5x "Well I only want you to stay out of my personal life. It doesn't concern any of you"
      y "Natsuki, please calm down"
@@ -784,6 +776,10 @@ label yuri_selection_ch2:
      y 1d "Bye, [player]"
      m 1k "Cya!"
      s 1d "Byeeeee!!!!"
+     show monika 1k at thide zorder 3
+     show sayori 1d at thide zorder 3
+     show natsuki 5g at thide zorder 3
+     show yuri 1d at thide zorder 3
      hide monika
      hide yuri
      hide sayori
