@@ -738,7 +738,7 @@ label yuri_selection_ch2:
      "The awkward silence reigns over the room, until."
      "The fire alarm goes off."
      play music audio.alarmfire
-     mc "Shit. Shit. Shit. Shit!!!
+     mc "Shit. Shit. Shit. Shit!!!"
      mc "This must not be good!"
      mc "Goddamit, HURRY UP YURI!"
      scene corridor with wipeleft
