@@ -674,7 +674,7 @@ label chap2_main:
     show sayori 1a at thide zorder 3
     hide monika
     hide sayori
-    "And that leaves me with two options on who I want to talk to"
+    "And that leaves me with one option on who I want to talk to"
     stop music
     show layer master at heartbeat
 
@@ -861,7 +861,7 @@ label yuri_selection_ch2:
      show yuri 4b at t32 zorder 3
      show sayori at t33 zorder 3
      s 4m "MONIKA!!! OMG WE'RE SHARING A BED! REEEEEEEEEEE!"
-     mc "Jesus Sayori... calm your ham.
+     mc "Jesus Sayori... calm your ham."
      scene livingroom with wipeleft
      "The night turned into binging the 'Sex Education' series on Netflix, during which Sayori barely opened her eyes."
      "ALl was fun and games, yet little did we know how eventful the next morning would be"
