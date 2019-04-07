@@ -765,7 +765,7 @@ label yuri_selection_ch2:
      show sayori 1g at t42 zorder 3
      show natsuki at t43 zorder 3
      show yuri 1g/  at t44 zorder 3
-    play music t2
+     play music t2
      n 1c "Guys, what the hell is happening!"
      mc "Nat! We were worried about you. Where did you disappear to?"
      hide monika
