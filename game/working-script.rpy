@@ -791,7 +791,7 @@ label yuri_selection_ch2:
      stop music
      play music t8
      image livingroom = "mod_assets/living_room.jpg"
-     scene residential_day with wipeleft
+     scene residential  with wipeleft
      "My phone vibrated, signalling a message."
      "I quickly pick it up to see if it's news on what will happen with our school"
      "It turns out to be a message to the Literature Club group chat"
