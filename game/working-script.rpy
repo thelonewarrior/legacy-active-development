@@ -811,11 +811,11 @@ label yuri_selection_ch2:
      "And now a sleepover"
      stop music
      show monika at t11 zorder 3
-     m 1a "{i}Has he even noticed us yet?{/i}
+     m 1a "{i}Has he even noticed us yet?{/i}"
      hide monika
      show monika 1a at t21 zorder 3
      show sayori at t22 zorder 3 
-     s 1b "{i}It looks like he's on autopilot{/i}
+     s 1b "{i}It looks like he's on autopilot{/i}"
      mc "Oh my god! Girls! How did you get here so quick?"
      play music t6
      hide sayori
@@ -844,7 +844,7 @@ label yuri_selection_ch2:
      show yuri at t21 zorder 3
      y 1b "Oh wow, a very sophisticated place you are keeping"
      show sayori at t22 zorder 3
-     s 4q "Which bed can I jump on?!?!?!
+     s 4q "Which bed can I jump on?!?!?!"
      mc "Jeez, everyone calm down!"
      mc "Here's how things will work"
      mc "Monika and Sayori, you share the spare room's double bed."
