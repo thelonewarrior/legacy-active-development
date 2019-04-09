@@ -5,7 +5,7 @@ Hey, this is the DDLC mod Legacy's readme file!
 # Credits
 
 Okay, here's my credits so far:
-(Credits show [DISCORD](discordapp.com) usernames, not actual names
+(Credits show [DISCORD](discordapp.com) usernames, not actual names)
 
 *Living Room BG:* @yagamirai10#7046, 
 
