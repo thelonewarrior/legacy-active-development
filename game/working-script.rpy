@@ -786,7 +786,7 @@ label yuri_selection_ch2:
      hide natsuki
      stop music
      play music t8
-     image livingroom = "mod_assets/living_room.jpg"
+     image livingroom = "mod_assets/living_room.png"
      scene residential  with wipeleft
      "My phone vibrated, signalling a message."
      "I quickly pick it up to see if it's news on what will happen with our school"
