@@ -611,18 +611,8 @@ label poem_onedo:
 define audio.alarmfire = "<loop 62.000>mod_assets/firealarmsfx.mp3"
 
 label chap2_main:
-    scene black with wipeleft
     define q = Character("???")
     define teacher = Character("Teacher")
-    q "You were probably expecting a normal beginning to this chapter."
-    q "I know, you're probably wondering who I am"
-    q "You've met me of course!"
-    $ style.say_dialogue = style.edited
-    q "Keep Checking The Files"
-    $style.say_dialogue = style.normal
-    "I can talk to you through your thoughts!"
-    "I-I mean I can't read them or anything! It's just I uhm, I uh...{nw}"
-    q "I prefer to talk like this. I'm not going to tell you who I am until the time is right. I'll try not to break things on you"
     scene class with wipeleft
     show sayori 1b at t11 zorder 3
     play music t2
