@@ -842,7 +842,7 @@ label yuri_selection_ch2:
      mc "Jesus Sayori... calm your ham."
      scene livingroom with wipeleft
      "The night turned into binging the 'Sex Education' series on Netflix, during which Sayori barely opened her eyes."
-     "ALl was fun and games, yet little did we know how eventful the next morning would be"
+     "At about half past 12 though, we ended up going to sleep, which Sayori complained about being too early"
      stop music
      image bg endfornow = "gui/endfornow.png"
      scene bg endfornow
