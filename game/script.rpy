@@ -1,4 +1,4 @@
-﻿# This is used for top-level game strucutre.
+# This is used for top-level game strucutre.
 # Should not include any actual events or scripting; only logic and calling other labels.
 
 label start:
@@ -29,13 +29,8 @@ label start:
     # if persistent.playthrough == 1:
     # call example script
     $ preferences.text_cps = 50
-
+   #chapter 1
     call chap1_main
-
-
-
-    #after chap1
-    call poem_onedo
 
 
     #chapter 2
