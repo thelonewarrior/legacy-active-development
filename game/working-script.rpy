@@ -598,14 +598,6 @@ label chpter1:
     "And I guess that starts with writing a poem tonight..."
 
     return
-
-label poem_onedo:
-     stop music
-     call screen dialog("This game was too easy to change.", ok_action=Return())
-     call screen dialog("What follows next is different", ok_action=Return())
-
-
-     return
 #END OF CHAPTER 1
 
 define audio.alarmfire = "<loop 62.000>mod_assets/firealarmsfx.mp3"
