@@ -838,11 +838,16 @@ label yuri_selection_ch2:
      m 2j "You're funny, Yuri"
      show yuri 4b at t32 zorder 3
      show sayori at t33 zorder 3
-     s 4m "MONIKA!!! OMG WE'RE SHARING A BED! REEEEEEEEEEE!"
+     s 4m "MONIKA!!! OMG WE'RE SHARING A BED! THIS IS THE BEST DAY EVER!!!!!!!"
      mc "Jesus Sayori... calm your ham."
      scene livingroom with wipeleft
      "The night turned into binging the 'Sex Education' series on Netflix, during which Sayori barely opened her eyes."
      "At about half past 12 though, we ended up going to sleep, which Sayori complained about being too early"
+     scene bedroom with wipeleft
+     "Even though she falls asleep at about 9:30 whenever she's at home."
+     "Okay, good night body"
+     
+
      stop music
      image bg endfornow = "gui/endfornow.png"
      scene bg endfornow
